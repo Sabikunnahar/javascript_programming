@@ -70,9 +70,12 @@ const person={
     we want to multiply each number by 2 with each member. We can use map instead of foreach*/ 
     
     const numbers2=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
     const mapNumber = numbers2.map(number =>number * 2);
-    console.log("Map numbers = ",mapNumber); // will print 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+    console.log("Map numbers = ",mapNumber);
+
+    const mapNames = ['John', 'Doe', 'Smith', 'Alex'];
+    const mapNamesObject = mapNames.map(name => name + '1');
+    console.log("Map names = ", mapNamesObject);
     console.log('---------------------------------');
 
     // method 7 (Reduce) ***
