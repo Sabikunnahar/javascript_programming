@@ -64,3 +64,21 @@ const person={
     const evenNumber = numbers.filter((number) => number%2===0);
     console.log(evenNumber); // will print 2, 4, 6, 8, 10
     console.log('---------------------------------');
+
+    // method 6 (map) ***
+    /* Suppose we have an array of numbers and 
+    we want to multiply each number by 2 with each member. We can use map instead of foreach*/ 
+    
+    const numbers2=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    const mapNumber = numbers2.map(number =>number * 2);
+    console.log("Map numbers = ",mapNumber); // will print 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+    console.log('---------------------------------');
+
+    // method 7 (Reduce) ***
+    /* Suppose we have an array of numbers and we want to sum all the numbers.
+    We can use reduce instead of foreach. Initially you have assign a value. */
+
+    const numbers3=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const myTotal = numbers3.reduce((total , number)=> total + number, 0);
+    console.log("Total = ", myTotal); // The sum of all array is 55
