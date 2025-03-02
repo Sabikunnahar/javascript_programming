@@ -85,3 +85,4 @@ const person={
     const numbers3=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const myTotal = numbers3.reduce((total , number)=> total + number, 0);
     console.log("Total = ", myTotal); // The sum of all array is 55
+    console.log('---------------------------------7');
